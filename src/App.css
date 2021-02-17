@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
-
-.App-header {
+/**********************************************************/
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.white{
+  background: white;
+  padding: 25px;
+}
+.cv{
+  margin: 5px auto;
+  width: 60%;
+  background-color: #5b8194;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.blue{
+  margin-top: 250px;
+  border-top: 4px solid white;
+  width: 80%;
+  background-color: #283f59;
+  color: white;
+  padding: 100px 25px;
+
+}
+.mainPhotoArea{
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-items: center;
+  width: 200px;
+  left: calc(50% - 100px);
+  top: -170px;
+}
+.mainPhoto{
+  border: 4px solid white;
+}
+.printers{
+  position: absolute;
+  display: flex;
+  top: 25px;
+  left: 25px;
+}
+.print{
+  width: 50px;
+  margin: 5px;
+}
+figcaption{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+figcaption>h1,
+figcaption>h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+.ListCard{
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1700px){
+  body {
+    background-color:gray;
   }
-  to {
-    transform: rotate(360deg);
+  .mainPhotoArea{
+    width: 100px;
+    left: calc(50% - 50px);
+    top: -170px;
+  }
+  figcaption>h1,
+  figcaption>h3{
+    font-size: smaller;
+  }
+  .blue {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  body {
+    background-color:rgb(138, 100, 100);
+  }
+  .cv{
+    flex-direction: column;
+  }
+  .blue{
+    margin-top: 250px;
+    width: 100%;
+  }
+  .mainPhotoArea{
+    width: 200px;
+    left: calc(50% - 100px);
+    top: -170px;
+  }
+  figcaption>h1, figcaption>h3 {
+    font-size:xx-large;
+  }
+  
+  .title {
+    font-size: xx-large !important;
+  }
+  .skill {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 900px){
+  body {
+    background-color:rgb(138, 100, 100);
+  }
+  .cv{
+    width: 100%;
+  }
+}
+@media print {
+  body {
+    background-color:white;
+  }
+  .cv{
+    width: 100%;
+  }
+  .blue {
+    width: 20%;
   }
 }

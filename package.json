@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "cv",
   "eslintConfig": {
     "extends": [
       "react-app",
