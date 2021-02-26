@@ -1,0 +1,10 @@
+.pf-wrapper--video .pf-banner--pixetic .flex-wrapper .sprite-wrapper .pf-hero--gif {
+    background: url(./sprite-min.png) left center;
+    -webkit-animation: sprite 5s steps(181) infinite;
+    animation: sprite 5s steps(181) infinite;
+    width: 260px;
+    height: 270px;
+    position: absolute;
+    right: 20px;
+    top: -50px;
+}
