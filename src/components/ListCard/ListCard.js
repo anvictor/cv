@@ -49,7 +49,7 @@ const ListCard = (props) => {
                  props.content==="ProfExp" &&  content[props.content].map((item,index) => {
                         return <li className="listItem" key={index}>
                             <div className="gridContainer">
-                                <p><b>Project name:</b>      </p> <p><b>{item.project_name}</b></p>
+                                <p><b>Company:</b>      </p> <p><b>{item.project_name}</b></p>
                                 <p>Description:              </p> <p> {item.description}</p>
                                 <p>Tools &amp; technologies: </p> <p>{item.tools_and_technologies}</p>
                                 <p>Project responsibilities: </p> <p>{item.project_responsibilities}</p>

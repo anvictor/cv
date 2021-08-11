@@ -57,7 +57,7 @@ function App() {
         <div className="white">
           <ListCard
             logo={profExp}
-            title={"PROFESSIONAL EXPIRIENCE"}
+            title={"PROFESSIONAL EXPERIENCE"}
             content = {"ProfExp"}
           />
           <ListCard

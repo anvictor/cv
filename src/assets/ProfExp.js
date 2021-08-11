@@ -3,7 +3,7 @@ const ProfExp =[
     project_name:"Juju Immersive Limited",
     description:"Mason-Art-Gallery. Tool for 3D art galleries.",
     tools_and_technologies:"HTML, SCSS, JavaScript, React, Typescript, Mobx, Three.js, GULP, Bitbucket, Ora",
-    project_responsibilities:"Middle Front-End Engineer",
+    project_responsibilities:"Front-End Engineer",
     period:"Apr 2020 - till now",
     duration:"9 months",
     customers:"UK, SWE"
@@ -12,7 +12,7 @@ const ProfExp =[
     project_name:"Juju Immersive Limited",
     description:"Pano-tour-apartment. A tool for 3D virtual visits to apartments upon purchase.",
     tools_and_technologies:"HTML, SCSS, JavaScript, Vue, Three.js, Webpack, Bitbucket, Ora",
-    project_responsibilities:"Middle Front-End Engineer",
+    project_responsibilities:"Front-End Engineer",
     period:"Apr 2020 - till now",
     duration:"9 months",
     customers:"UK, SWE"
@@ -21,7 +21,7 @@ const ProfExp =[
     project_name:"Avantime Group AB",
     description:"A tool for intra corporate communication like a hybrid of Jira with Facebook.",
     tools_and_technologies:"HTML, CSS, LESS, Bootstrap, JavaScript, TypeScript, React, Mobx, Webpack, Git, Jira, Postman, Swagger",
-    project_responsibilities:"Junior++ Front-End Engineer",
+    project_responsibilities:"Front-End Engineer",
     period:"Jan 2020 - May 2020",
     duration:"5 months",
     customers:"UK"
@@ -30,7 +30,7 @@ const ProfExp =[
     project_name:"CTDEV",
     description:"Schindler elevator software interface for computing authentication, communication and logistics.",
     tools_and_technologies:"HTML, CSS, LESS, JavaScript, GULP, Webpack, Git, Redmine",
-    project_responsibilities:"Junior+ Front-End Engineer",
+    project_responsibilities:"Front-End Engineer",
     period:"Aug 2019 - Jan 2020",
     duration:"6 months",
     customers:"US, CH"
@@ -39,7 +39,7 @@ const ProfExp =[
     project_name:"Teapplix",
     description:"Tool to automate formatting, uploading, downloading and accounting of goods data between marketplaces like Alibaba and Amazon and 5 more others.",
     tools_and_technologies:"HTML, SCSS, Bootstrap, JavaScript, React, Redux, Webpack, Git, Jira",
-    project_responsibilities:"Junior Front-End Engineer",
+    project_responsibilities:"Front-End Engineer",
     period:"Feb-Aug 2019",
     duration:"7 months",
     customers:"US"
